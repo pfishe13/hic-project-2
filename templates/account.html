@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+{% endblock %}
+
+
+
+{% block body %}
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/buy">Buy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/sell">Sell</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/portfolio">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/upcoming">Upcoming</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-text-color active" href="/account">Account</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-text-color" href="/about">About</a>
+    </li>
+</ul>
+
+<div class="main-content">
+  <!-- Header -->
+  <div class="container-fluid">
+    <div class="row">
+            <div class="col-lg-6 ">
+                <h2>Account</h2>
+                  <form class="account-containers needs-validation" novalidate>
+                      <div class="col-md-4 mb-3">
+                          <label for="validationCustom01">First name: </label>
+                          <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                          <div class="valid-feedback">
+                          Looks good!
+                          </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                          <label for="validationCustom02">Last name: </label>
+                          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                          <div class="valid-feedback">
+                          Looks good!
+                          </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                          <label for="validationCustomUsername">Email:</label>
+                          <div class="input-group">
+                          <input type="email" class="form-control" id="validationCustomUsername" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                              Enter valid email.
+                          </div>
+                          </div>
+                      </div>
+                      <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                          <label for="validationCustom03">Phone Number:</label>
+                          <input type="tel" class="form-control" id="validationCustom03" placeholder="Phone Number" required>
+                          <div class="invalid-feedback">
+                          Please provide a valid phone number.
+                          </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                          <label for="validationCustom04">Shoe Size:</label>
+                          <select class="form-control account-form" id="exampleFormControlSelect1">
+                                      <option value="1">4</option>
+                                      <option value="2">4.5</option>
+                                      <option value="3">5</option>
+                                      <option value="1">5.5</option>
+                                      <option value="2">6</option>
+                                      <option value="3">6.5</option>
+                                      <option value="1">7</option>
+                                      <option value="2">7.5</option>
+                                      <option value="3">8</option>
+                                      <option value="1">8.5</option>
+                                      <option value="2">9</option>
+                                      <option value="3">9.5</option>
+                                      <option value="1">10</option>
+                                      <option value="2">10.5</option>
+                                      <option value="3">11</option>
+                                      <option value="1">11.5</option>
+                                      <option value="2">12</option>
+                                      <option value="3">12.5</option>
+                                      <option value="1">13</option>
+                                      <option value="2">13.5</option>
+                                      <option value="3">14</option>
+                                      <option value="1">14.5</option>
+                                      <option value="2">15</option>
+                                      <option value="3">16</option>
+                            </select>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                          <label for="validationCustom05">Gender:</label>
+                          <select class="form-control account-form" id="exampleFormControlSelect2">
+                              <option value="2">Male</option>
+                              <option value="3">Female</option>
+                              <option value="1">Other</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                              Agree to terms and conditions
+                              </label>
+                              <div class="invalid-feedback">
+                              You must agree before submitting.
+                              </div>
+                          </div>
+                      </div>
+                      <button class="btn btn-primary" type="submit">Create Account</button>
+                  </form>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h2>Preferences</h2>
+                  <form class="account-containers needs-validation" novalidate>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom05">Language:</label>
+                        <select class="form-control account-form" id="exampleFormControlSelect2">
+                            <option value="2">English</option>
+                            <option value="3">Spanish</option>
+                            <option value="1">French</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationCustom05">Currency:</label>
+                        <select class="form-control account-form" id="exampleFormControlSelect2">
+                            <option value="2">US Dollars</option>
+                            <option value="3">Pesos</option>
+                            <option value="1">Euros</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom05">Country:</label>
+                        <select class="form-control account-form" id="exampleFormControlSelect2">
+                            <option value="2">United States</option>
+                            <option value="3">Mexico</option>
+                            <option value="1">France</option>
+                            <option value="4">Other</option>
+
+                        </select>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Dark Mode:</label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                          </div>
+                        </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Emails:</label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                          </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Notifications:</label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                          </div>
+                      </div>
+                      <button class="btn btn-primary" type="submit">Save Preferences</button>
+                  </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+
+{% endblock %}

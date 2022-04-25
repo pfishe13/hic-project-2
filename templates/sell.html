@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+{% endblock %}
+
+
+
+{% block body %}
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/buy">Buy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-text-color active" href="/sell">Sell</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/portfolio">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/upcoming">Upcoming</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-text-color" href="/account">Account</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-text-color" href="/about">About</a>
+    </li>
+</ul>
+
+<div class="main-content">
+    <!-- Header -->
+    <h2>Sell</h2>
+    
+    <!-- Filter Options -->
+    
+    <form class="row gy-2 gx-3 align-items-center form-search">
+        <div class="col-auto">
+          <label class="visually-hidden" for="autoSizingInput">Name</label>
+          <input type="text" style="width: 250px" class="form-control" id="autoSizingInput" placeholder="Model, Name, SKU, Keyword">
+        </div>
+        <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+            <select class="form-select" id="autoSizingSelect">
+                <option selected>Size</option>
+                <option value="1">4</option>
+                <option value="2">4.5</option>
+                <option value="3">5</option>
+                <option value="1">5.5</option>
+                <option value="2">6</option>
+                <option value="3">6.5</option>
+                <option value="1">7</option>
+                <option value="2">7.5</option>
+                <option value="3">8</option>
+                <option value="1">8.5</option>
+                <option value="2">9</option>
+                <option value="3">9.5</option>
+                <option value="1">10</option>
+                <option value="2">10.5</option>
+                <option value="3">11</option>
+                <option value="1">11.5</option>
+                <option value="2">12</option>
+                <option value="3">12.5</option>
+                <option value="1">13</option>
+                <option value="2">13.5</option>
+                <option value="3">14</option>
+                <option value="1">14.5</option>
+                <option value="2">15</option>
+                <option value="3">16</option>
+            </select>
+          </div>
+        
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    
+    <!-- Table -->
+    <table class="table table-hover table-border">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Model</th>
+            <th scope="col">Name</th>
+            <th scope="col">SKU</th>
+            <th class="text-center" scope="col">Size</th>
+            <th class="text-end" scope="col">GOAT Highest Bid</th>
+            <th class="text-end" scope="col">StockX Highest Bid</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr onclick="location.href='/shoe2'">
+            <th scope="row"><img src="../static/css/images/yeezyblush.png" width= "70px" alt=""></th>
+            <td>adidas Yeezy 500</td>
+            <td>Stone</td>
+            <td>FW4839</td>
+            <td class="text-center">9.5</td>
+            <td class="text-end"><a class="btn btn-primary" href="https://www.goat.com/sneakers/yeezy-500-stone-fw4839">$128</a></td>
+            <td class="text-end"><a class="btn btn-primary" href="https://stockx.com/adidas-yeezy-500-stone">$120</a></td>
+          </tr>
+          <tr onclick="location.href='/shoe2'">
+            <th scope="row"><img src="../static/css/images/airmaxmellow.png" width= "70px" alt=""></th>
+            <td>Nike Air Max 1 SP</td>
+            <td>Mellow</td>
+            <td>DN1803-300</td>
+            <td class="text-center">9.5</td>
+            <td class="text-end"><a class="btn btn-primary" href="https://www.goat.com/sneakers/concepts-x-air-max-1-sp-mellow-dn1803-300">$128</a></td>
+            <td class="text-end"><a class="btn btn-primary" href="https://stockx.com/nike-air-max-1-sp-concepts-denim-olive-canvas">$120</a></td>
+          </tr>
+          <tr onclick="location.href='/shoe2'">
+            <th scope="row"><img src="../static/css/images/jordan1uniblue.png" width= "70px" alt=""></th>
+            <td>Air Jordan 1 High OG</td>
+            <td>University Blue</td>
+            <td>55088-134</td>
+            <td class="text-center">9.5</td>
+            <td class="text-end"><a class="btn btn-primary" href="https://www.goat.com/sneakers/air-jordan-1-retro-high-og-university-blue-555088-134">$128</a></td>
+            <td class="text-end"><a class="btn btn-primary" href="https://stockx.com/air-jordan-1-retro-high-white-university-blue-black">$120</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+{% endblock %}

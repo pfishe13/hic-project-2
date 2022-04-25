@@ -1,0 +1,164 @@
+body {
+    background-color: #1D1D20;
+    color: #D9D9DA;
+    /* font color */
+}
+
+p {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1,
+h3 {
+    color: #5DC6B3;
+    /* teal, secondary header color */
+    padding-top: 8px;
+}
+
+.main-title {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 120px !important;
+}
+
+
+h2 {
+    font-family: 'Gochi Hand', cursive;
+    color: #D9D9DA;
+    /* grey, main header color, for headers on each page */
+    font-size: 40;
+}
+
+svg {
+    padding-right: 2px;
+}
+
+.nav {
+    padding-top: 12px;
+}
+
+.nav-text-color {
+    color: #6462FC
+}
+
+.nav a:hover,
+a.active {
+    border-bottom: 2px solid #6462FC;
+    color: #6462FC;
+}
+
+.nav>li,
+.nav>p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Main content container for every page */
+.main-content {
+    height: 100%;
+    margin: 4%;
+}
+
+.form-search {
+    margin-top: 5px !important;
+}
+
+.btn-primary {
+    background-color: #5DC6B3 !important;
+    border-color: black !important;
+    color: #1D1D20;
+}
+
+.form-control,
+.form-select {
+    background-color: #1D1D20 !important;
+    color: #6c7781 !important;
+    border: 1px solid black !important;
+}
+
+/* Table Properties */
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    color: #D9D9DA !important;
+    border-color: black !important;
+}
+
+.table-border {
+    border-top: 2px solid black !important;
+    margin-top: 20px;
+}
+
+tr {
+    line-height: 35px;
+    min-height: 35px;
+    height: 30px;
+}
+
+td {
+    vertical-align: middle;
+    height: 20px;
+}
+
+span {
+    padding-right: 20px;
+}
+
+.card {
+    background-color: #1D1D20;
+    border: 2px solid rgba(0, 0, 0, .125);
+    color: #5DC6B3;
+}
+
+.card-body {
+    background-color: #1D1D20;
+}
+
+.card:hover {
+    /* box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.4); */
+    background-color: rgba(26, 25, 25, 0.842);
+}
+
+.account-containers {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.shoe-containers {
+    margin-top: 10px;
+    height: inherit;
+    text-align: center;
+
+}
+
+
+.account-form {
+    width: 50%;
+}
+
+.shoe-image-large {
+    width: -webkit-fill-available;
+    margin-top: -65px;
+    margin-bottom: -65px;
+}
+
+.shoe-form {
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.btn-box {
+    padding: 3rem;
+}
+
+.shoe-btn-back {
+    position: absolute;
+    margin: 12px;
+}

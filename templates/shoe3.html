@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+{% endblock %}
+
+
+
+{% block body %}
+<a class="btn btn-primary shoe-btn-back" type="button" href="/portfolio">Back</a>
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/buy">Buy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/sell">Sell</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/portfolio">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-text-color" href="/upcoming">Upcoming</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-text-color" href="/account">Account</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-text-color" href="/about">About</a>
+    </li>
+</ul>
+
+<div class="main-content">
+    <!-- Header -->
+    <h2>adidas Yeezy Foam Rnnr</h2>
+    <h3>
+        <span>Sand</span>
+    </h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 " style="padding-left: 0">
+                <div class="account-containers shoe-containers">
+                    <img class="shoe-image-large" src="../static/css/images/yeezyfoam.png" width= "70px" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-6 " style="padding-left: 0">
+                <div class="account-containers shoe-containers">
+                          <select class="shoe-form form-control account-form" id="exampleFormControlSelect1">
+                                      <option value="1">Shoe Size</option>
+                                      <option value="2">4.5</option>
+                                      <option value="3">5</option>
+                                      <option value="1">5.5</option>
+                                      <option value="2">6</option>
+                                      <option value="3">6.5</option>
+                                      <option value="1">7</option>
+                                      <option value="2">7.5</option>
+                                      <option value="3">8</option>
+                                      <option value="1">8.5</option>
+                                      <option value="2">9</option>
+                                      <option value="3">9.5</option>
+                                      <option value="1">10</option>
+                                      <option value="2">10.5</option>
+                                      <option value="3">11</option>
+                                      <option value="1">11.5</option>
+                                      <option value="2">12</option>
+                                      <option value="3">12.5</option>
+                                      <option value="1">13</option>
+                                      <option value="2">13.5</option>
+                                      <option value="3">14</option>
+                                      <option value="1">14.5</option>
+                                      <option value="2">15</option>
+                                      <option value="3">16</option>
+                            </select>
+                    <div>
+                        <div class="row">
+                        <div class="btn-box col-md-6">
+                            <!-- Button-->
+                            <label class="btn btn-primary btn-lg">Buy on GOAT<br>
+                                <span>Lowest Price: $128</span>
+                            </label>
+                        </div>
+                        <div class="btn-box col-md-6">
+                            <label class="btn btn-primary btn-lg">Buy on StockX<br>
+                                <span>Lowest Price: $120</span>
+                            </label>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="btn-box col-md-6">
+                            <label class="btn btn-primary btn-lg">Sell on GOAT<br>
+                                <span>Highest Offer: $118</span>
+                            </label>
+                        </div>
+                        <div class="btn-box col-md-6">
+                            <label class="btn btn-primary btn-lg">Sell on StockX<br>
+                                <span>Highest Offer: $116</span>
+                            </label>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-box col-md-12">
+                                <label class="btn btn-primary btn-lg" style="width: 95%">Add To Portfolio</label>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".hBack").on("click", function(e){
+    e.preventDefault();
+    window.history.back();
+});
+</script>
+{% endblock %}
